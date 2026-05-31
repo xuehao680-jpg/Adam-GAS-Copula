@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv --version)",
+      "Bash(curl -LsSf https://astral.sh/uv/install.sh)",
+      "Bash(sh)",
+      "Bash(export PATH=\"$HOME/.local/bin:$PATH\")",
+      "Bash(uv venv:*)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/python -m pip install numpy cython scipy pandas matplotlib seaborn patsy numdifftools pytest -i https://mirrors.aliyun.com/pypi/simple/)",
+      "Bash(.venv/bin/python -m ensurepip --upgrade)",
+      "Bash(curl -sS https://bootstrap.pypa.io/get-pip.py)",
+      "Bash(.venv/bin/python)",
+      "Bash(.venv/bin/python -m pip list)",
+      "Bash(.venv/bin/python setup.py build_ext --inplace)",
+      "Bash(.venv/bin/python:*)",
+      "Bash(ls -la pyflux/families/*.py)",
+      "Bash(find pyflux:*)",
+      "Bash(wc -l /mnt/d/GAS模型重构/pyflux/pyflux/gas_copula/docs/*.md)",
+      "Bash(python:*)"
+    ]
+  }
+}
